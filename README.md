@@ -1,4 +1,4 @@
-# MINIHACKATHON TAG 1 - IDEE Kevin Chromik
+# MINIHACKATHON TAG 1 - Idee: Kevin Chromik
 
 ## AUFGABE 1 – SCHÖNES WETTER
 Egal, ob man spazieren geht, in den Urlaub fliegt oder ein Grillfest mit Freunden plant. Das Wetter kann einem immer einen Strich durch die Rechnung machen. Gut, dass es dafür Apps und Webseiten gibt. Da wir Dinge gerne selbst bauen, werden wir die Wetter-Daten nehmen und damit ganz eigene Dinge bauen.
