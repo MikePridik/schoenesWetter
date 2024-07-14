@@ -1,3 +1,6 @@
+@import "reset.css";
+@import "./fonts/climacons.css";
+
 :root {
 	font-size: 16px;
 	--txt-color: #ffffff;
@@ -7,14 +10,15 @@
 	--txt-xxl: 2.75rem;
 }
 
+
 body {
 	background-image: 
 	radial-gradient(at 40% 20%, #ffa4f6 0px, transparent 50%),
-	radial-gradient(at 0% 50%, #ffffff 0px, transparent 50%),
+	radial-gradient(at 0% 50%, #ffd51a 0px, transparent 50%),
 	radial-gradient(at 35% 55%, #be09fb 0px, transparent 50%),
 	radial-gradient(at 80% 50%, #ffa4e8 0px, transparent 50%),
 	radial-gradient(at 0% 100%, #be09fb 0px, transparent 50%),
-	radial-gradient(at 80% 100%, #ffffff 0px, transparent 50%),
+	radial-gradient(at 80% 100%, #ffd11a 0px, transparent 50%),
 	radial-gradient(at 0% 0%, #FF14C3 0px, transparent 50%),
 	radial-gradient(at 80% 0%, #ffffff 0px, transparent 50%);
 	background-repeat: no-repeat;
@@ -25,6 +29,16 @@ body {
 	justify-content: center;
 	align-items: center;
 	color: var(--txt-color);
+
+	strong {
+		font-weight: 700;
+	}
+
+	sup {
+		font-size: var(--txt-normal);
+		line-height: 2;
+		vertical-align: text-top;
+	}
 }
 
 @keyframes flow {
@@ -40,16 +54,22 @@ body {
 #weather_body {
 	display: grid;
 	grid-template-rows: repeat(10, 1fr);
-	gap: 10px;
 	width: 300px;
 	height: 500px;
 	background-color: #ffffff58;
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
-	border: 2px solid #ffffff7d;
 	/* outline: 1px solid #fff; */
 	border-radius: 16px;
 	padding: 1rem;
+
+	box-shadow:
+			0px 1.4px 2.2px rgba(0, 0, 0, 0.02),
+			0px 3.3px 5.3px rgba(0, 0, 0, 0.028),
+			0px 6.3px 10px rgba(0, 0, 0, 0.035),
+			0px 11.2px 17.9px rgba(0, 0, 0, 0.042),
+			0px 20.9px 33.4px rgba(0, 0, 0, 0.05),
+			0px 50px 80px rgba(0, 0, 0, 0.07);
 
 	#header {
 		grid-row: 1 / 2;
@@ -61,15 +81,31 @@ body {
 
 
 	#main {
-		grid-row: 2 / 7;
-		display: flex;
+		grid-row: 2 / 8;
+		text-align: center;
+		margin-inline: auto;
+
+		.icon {
+			font-size: calc(var(--txt-xxl) * 3.6 );
+			display: block;
+			line-height: 1;
+		}
+
+		#temp {
+			font-size: var(--txt-xxl);
+			font-weight: 900;
+		}
+		#temp-highlow {
+			font-size: var(--txt-small);
+		}
 	}
 
 	#footer {
 		grid-row: 8 / 11;
-		display: flex;
-		justify-content: space-between;
 		font-size: var(--txt-small);
 		font-weight: 900;
+		background-color: #ffffff58;
+		border-radius: 8px;
+		padding: 1rem;
 	}
 }

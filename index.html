@@ -3,7 +3,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>AUFGABE 1 – SCHÖNES WETTER</title>
-	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="styles.css">
 	<script src="app.js" defer></script>
 </head>
@@ -14,15 +13,22 @@
 			<div id="zeit">18:11:32 Uhr</div>
 		</section>
 		<section id="main">
-			<img src="weather.png" alt="Es sieht nach Sonne aus">
+			<span class="icon climacon sun" aria-hidden="true"></span>
 			<strong>Sonne</strong>
-			<p id="temp">27°C</p>
+			<p id="temp">27<sup>°C</sup></p>
 			<p id="temp-highlow">
-				<strong>L: 15°C</strong>
-				<strong>L: 32°C</strong>
+				<span>L: 15°C</span>
+				<span>H: 32°C</span>
 			</p>
 		</section>
-		<section id="footer">2024 - Mike Pridik</section>
+		<section id="footer">
+			<div id="info">
+				<div id="wind">wind</div>
+				<div id="regen">regen</div>
+				<div id="feuchte">feuchte</div>
+			</div>
+			<p>2024 - Mike Pridik</p>
+		</section>
 	</div>
 </body>
 </html>
