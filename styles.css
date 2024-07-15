@@ -23,12 +23,14 @@ body {
 	radial-gradient(at 80% 0%, #ffffff 0px, transparent 50%);
 	background-repeat: no-repeat;
 	background-size: 150% 150%;
-	animation: flow 15s ease infinite;
+	/* animation: flow 30s ease infinite; */
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: var(--txt-color);
+
+	font-weight: 600;
 
 	strong {
 		font-weight: 700;
@@ -48,8 +50,6 @@ body {
 	75% { background-size: 110% 200%;}
 	100% { background-size: 125% 125%;}
 }
-
-
 
 #weather_body {
 	display: grid;
@@ -103,9 +103,38 @@ body {
 	#footer {
 		grid-row: 8 / 11;
 		font-size: var(--txt-small);
-		font-weight: 900;
 		background-color: #ffffff58;
-		border-radius: 8px;
+		border-radius: 14px;
 		padding: 1rem;
+		color: #ffffff;
+
+		#info {
+			display: flex;
+			justify-content: space-between;
+			text-align: center;
+			> div {
+				display: grid;
+				width: 80px;
+				margin-bottom: 2rem;
+				font-weight: 400;
+			}
+			.icon {
+				font-size: var(--txt-xxl);
+			}
+			strong {
+				font-size: var(--txt-normal);
+				margin-bottom: .5rem;
+			}
+		}
+	}
+
+	.txt--shadow {
+		text-shadow:
+				0px 1.4px 2.2px rgba(0, 0, 0, 0.02),
+				0px 3.3px 5.3px rgba(0, 0, 0, 0.028),
+				0px 6.3px 10px rgba(0, 0, 0, 0.035),
+				0px 11.2px 17.9px rgba(0, 0, 0, 0.042),
+				0px 20.9px 33.4px rgba(0, 0, 0, 0.05),
+				0px 50px 80px rgba(0, 0, 0, 0.07);
 	}
 }

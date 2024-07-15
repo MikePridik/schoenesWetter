@@ -9,11 +9,11 @@
 <body>
 	<div id="weather_body">
 		<section id="header">
-			<div id="ort">Peine</div>
+			<div id="ort">Welt</div>
 			<div id="zeit">18:11:32 Uhr</div>
 		</section>
 		<section id="main">
-			<span class="icon climacon sun" aria-hidden="true"></span>
+			<i class="icon txt--shadow climacon moon full" aria-hidden="true"></i>
 			<strong>Sonne</strong>
 			<p id="temp">27<sup>°C</sup></p>
 			<p id="temp-highlow">
@@ -22,12 +22,23 @@
 			</p>
 		</section>
 		<section id="footer">
-			<div id="info">
-				<div id="wind">wind</div>
-				<div id="regen">regen</div>
-				<div id="feuchte">feuchte</div>
+			<div id="info" class="txt--shadow">
+				<div id="wind">
+					<i class="icon climacon wind" aria-hidden="true"></i>
+					<strong>7km/h</strong>
+					Wind
+				</div>
+				<div id="regen">
+					<i class="icon climacon umbrella" aria-hidden="true"></i>
+					<strong>23%</strong>
+					Regen
+				</div>
+				<div id="feuchte">
+					<i class="icon climacon thermometer medium-low" aria-hidden="true"></i>
+					<strong>67%</strong>
+					Luftfeuchte
+				</div>
 			</div>
-			<p>2024 - Mike Pridik</p>
 		</section>
 	</div>
 </body>
