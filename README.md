@@ -19,3 +19,10 @@ Hier geht es zu GitHub, wo du sogar verschiedene Open-Meteo SDKs findest, damit 
 * Frameworks und SDKs sind absolut erlaubt. Man muss nicht alles von Null programmieren.
 * ChatGPT und andere KIs sind natürlich erlaubt.
 * Benutze in irgendeiner Form die Open-Meteo API.
+
+
+### Copyright information
+This is a non commercial fun project
+
+Climacon font by
+https://github.com/christiannaths/Climacons-Font
