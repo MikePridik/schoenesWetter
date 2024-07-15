@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         weatherCurrentTime.textContent = sanitazeDateTime(data);
         returnCurrentWeatherCode(data);
-        weatherCurrentTemp.textContent = data.current.temperature_2m;
+        weatherCurrentTemp.innerHTML = `${data.current.temperature_2m}<sup>°C</sup>`;
         weatherTempHighLow.innerHTML = `
             <span>T: ${data.daily.temperature_2m_min}°C</span>
             <span>H: ${data.daily.temperature_2m_max}°C</span>
