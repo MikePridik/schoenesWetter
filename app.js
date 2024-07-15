@@ -44,79 +44,79 @@ document.addEventListener('DOMContentLoaded', () => {
         // 0 Clear sky
         if (wmo === 0) {
             weatherText.textContent = `Sonnig`;
-            weatherIcon.className = 'icon txt-shadow climacon sun';
+            weatherIcon.className = 'icon txt--shadow climacon sun';
         }
     
         // 1, 2, 3 Mainly clear, partly cloudy, and overcast
         if (wmo === 1 || wmo === 2 || wmo === 3) {
             weatherText.textContent = `Eventuell leicht Bewölkt`;
-            weatherIcon.className = 'icon txt-shadow climacon cloud sun';
+            weatherIcon.className = 'icon txt--shadow climacon cloud sun';
         }
     
         // 45, 48 Fog and depositing rime fog
         if (wmo === 45 || wmo === 48) {
             weatherText.textContent = `Nebel`;
-            weatherIcon.className = 'icon txt-shadow climacon fog';
+            weatherIcon.className = 'icon txt--shadow climacon fog';
         }
     
         // 51, 53, 55 Drizzle: Light, moderate, and dense intensity
         if (wmo === 51 || wmo === 53 || wmo === 55) {
             weatherText.textContent = `Nieselregen`;
-            weatherIcon.className = 'icon txt-shadow climacon drizzle';
+            weatherIcon.className = 'icon txt--shadow climacon drizzle';
         }
     
         // 56, 57 Freezing Drizzle: Light and dense intensity
         if (wmo === 56 || wmo === 57) {
             weatherText.textContent = `Gefrierender Nieselregen`;
-            weatherIcon.className = 'icon txt-shadow climacon drizzle';
+            weatherIcon.className = 'icon txt--shadow climacon drizzle';
         }
     
         // 61, 63, 65 Rain: Slight, moderate and heavy intensity
         if (wmo === 61 || wmo === 63 || wmo === 65) {
             weatherText.textContent = `Regen`;
-            weatherIcon.className = 'icon txt-shadow climacon rain';
+            weatherIcon.className = 'icon txt--shadow climacon rain';
         }
     
         // 66, 67 Freezing Rain: Light and heavy intensity
         if (wmo === 66 || wmo === 67) {
             weatherText.textContent = `Gefrierender Nieselregen`;
-            weatherIcon.className = 'icon txt-shadow climacon rain';
+            weatherIcon.className = 'icon txt--shadow climacon rain';
         }
     
         // 71, 73, 75 Snow fall: Slight, moderate, and heavy intensity
         if (wmo === 71 || wmo === 73 || wmo === 75) {
             weatherText.textContent = `Schneefall`;
-            weatherIcon.className = 'icon txt-shadow climacon snow';
+            weatherIcon.className = 'icon txt--shadow climacon snow';
         }
     
         // 77 Snow grains
         if (wmo === 77) {
             weatherText.textContent = `Starker Schneefall`;
-            weatherIcon.className = 'icon txt-shadow climacon snowflake';
+            weatherIcon.className = 'icon txt--shadow climacon snowflake';
         }
     
         // 80, 81, 82 Rain showers: Slight, moderate, and violent
         if (wmo === 80 || wmo === 81 || wmo === 82) {
             weatherText.textContent = `Regenschauer`;
-            weatherIcon.className = 'icon txt-shadow climacon rain';
+            weatherIcon.className = 'icon txt--shadow climacon rain';
         }
     
         // 85, 86 Snow showers slight and heavy
         if (wmo === 85 || wmo === 86) {
             weatherText.textContent = `Schneefall`;
-            weatherIcon.className = 'icon txt-shadow climacon snowflake';
+            weatherIcon.className = 'icon txt--shadow climacon snowflake';
         }
     
         // 95 * Thunderstorm: Slight or moderate
         if (wmo === 95) {
             weatherText.textContent = `Sturm`;
-            weatherIcon.className = 'icon txt-shadow climacon tornado';
+            weatherIcon.className = 'icon txt--shadow climacon tornado';
         }
     
         // 96, 99 * Thunderstorm with slight and heavy hail
         if (wmo === 96 || wmo === 99) {
             weatherText.textContent = `Gewitter mit leichtem und schwerem Hagel`;
-            weatherIcon.className = 'icon txt-shadow climacon tornado';
+            weatherIcon.className = 'icon txt--shadow climacon tornado';
         }
     
     }
