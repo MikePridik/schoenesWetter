@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
         fetch(LocationUrl)
             .then(response => response.json())
             .then(dataLocation => {
-                weatherLocation.textContent = `${ dataLocation.address.town }` ;
+                weatherLocation.textContent = `${ dataLocation.address.town }, ${ dataLocation.address['ISO3166-2-lvl4']}` ;
             // Hier kannst du data.display_name verwenden, um den Ort anzuzeigen
             // Zum Beispiel: document.getElementById('ort').innerHTML = data.display_name;
             })
