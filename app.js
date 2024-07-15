@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
         returnCurrentWeatherCode(data);
         weatherCurrentTemp.textContent = data.current.temperature_2m;
         weatherTempHighLow.innerHTML = `
-            <span>L: ${data.daily.temperature_2m_min}°C</span>
+            <span>T: ${data.daily.temperature_2m_min}°C</span>
             <span>H: ${data.daily.temperature_2m_max}°C</span>
             `;
         weatherWindToday.textContent = `${data.current.wind_speed_10m} km/h`;
